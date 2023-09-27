@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2023 at 06:02 PM
+-- Generation Time: Sep 27, 2023 at 07:31 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -64,7 +64,7 @@ CREATE TABLE `application_settings` (
 --
 
 INSERT INTO `application_settings` (`m_app_id`, `m_app_name`, `m_app_title`, `m_app_icon`, `m_app_logo`, `m_app_banner`, `m_app_email`, `m_app_mobile`, `m_app_keywords`, `m_app_description`, `m_app_fb`, `m_app_insta`, `m_app_youtube`, `m_app_twitter`, `m_app_whatsapp`, `m_app_status`, `m_app_version`, `m_agent_app_version`, `m_app_website`, `m_app_address`, `m_app_timezone`, `m_app_date_format`, `m_app_time_format`, `m_app_language`, `m_app_currency`, `paid_listing_added_amt`, `agent_daily_milestone`, `daily_milestone_amount`, `agent_order_commision`) VALUES
-(1, 'Admin Panel', 'Admin Panel', 'Aadya_Logo1.png', 'Aadya_Logo.png', 'Aadya_Logo2.png', 'Admin Panel', '+91 7879122060', 'PolyBond', 'Durg', '', '', '', '', '', 0, 5, 1, '', 'Block No. 14, Flat No. 302\r\nMatri Kunj Bhilai Durg Chhattisgrh (490006), India.', 'Asia/Kolkata', 'DD/MM/YY', '24 Hours', '', '', 0, 0, 0, 1);
+(1, 'PSPU Admin Panel', 'PSPU Admin Panel', 'logo2.png', 'logo1.png', 'logo3.png', 'PSPU Admin Panel', '+91 9425234990,+91 9', 'PolyBond', 'Durg', '', '', '', '', '', 0, 5, 1, '', 'Central Office\r\nMadhariya Complex, Maharaja Chowk, Mukt Nagar, District- Durg (Chhattisgarh) Pin – 491001\r\nContact Mobile – 9425234990,9303650593', 'Asia/Kolkata', 'DD/MM/YY', '24 Hours', '', '', 0, 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -372,7 +372,34 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `user_agent`, `timestamp`, `data`
 ('2dnrd45h6jeo8846384ibudp94vhhbkb', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1669291487;is_user_in|b:1;user_id|s:1:\"1\";'),
 ('9q4rk7dcald3mjg1g72bj73rigrotrge', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1669291487;is_user_in|b:1;user_id|s:1:\"1\";'),
 ('lfmib9spfvm15t3nahin02bd3kt20bd6', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1681833003;is_user_in|b:1;user_id|s:1:\"1\";'),
-('llrs07idcr20a6e3aatfusipn1dlan89', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1681833581;is_user_in|b:1;user_id|s:1:\"1\";');
+('llrs07idcr20a6e3aatfusipn1dlan89', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1681833581;is_user_in|b:1;user_id|s:1:\"1\";'),
+('m4rs2gl61pagahb26nk5sbeh4gi7lpnh', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695182088;is_user_in|b:1;user_id|s:1:\"1\";'),
+('lfmocm08b0mvf3d4rtjd58u88jhtrg0f', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695182406;is_user_in|b:1;user_id|s:1:\"1\";'),
+('a1tqcma6ubs976u46shg0i94g1bdd3ti', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695183984;is_user_in|b:1;user_id|s:1:\"1\";'),
+('u8oja8jcml4upjacf5cknc9memdp6edc', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695183984;is_user_in|b:1;user_id|s:1:\"1\";'),
+('lgi48e6v7ro0i46u6en9k4foppcornsd', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695780223;is_user_in|b:1;user_id|s:1:\"1\";'),
+('bu09qnvlg0fces8osb56l1q0u94ma2o3', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695780590;is_user_in|b:1;user_id|s:1:\"1\";'),
+('09rgmjmroj10td7fh5bp9dc1cmuk12la', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695780976;is_user_in|b:1;user_id|s:1:\"1\";'),
+('jn5si70jesonb37cv9d8fujnvfdss152', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695782469;is_user_in|b:1;user_id|s:1:\"1\";'),
+('gu69rdv4318ltgi70l5q07opnjpugkn9', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695784121;is_user_in|b:1;user_id|s:1:\"1\";'),
+('ikvpm05juisjdt9im6ff416docsv7ql6', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695784422;is_user_in|b:1;user_id|s:1:\"1\";'),
+('akqcotjjonqi9o41149umi57b6c4k0il', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695784726;is_user_in|b:1;user_id|s:1:\"1\";'),
+('qn4qdsut1083hplmdvsnshtelqk2t2b3', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695785118;is_user_in|b:1;user_id|s:1:\"1\";'),
+('n4johrmdcpdn55oa6sm6ddo29k789hck', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695785429;is_user_in|b:1;user_id|s:1:\"1\";'),
+('qgq34mplaim1rvidd5lqjh57ono4l1nv', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695785887;is_user_in|b:1;user_id|s:1:\"1\";'),
+('tqgdls4o083d1dvb3hmv0i2r3svfqaga', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695786525;is_user_in|b:1;user_id|s:1:\"1\";'),
+('3l2pc1q10svt29j1dc0eq0csclsad99a', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695786525;is_user_in|b:1;user_id|s:1:\"1\";'),
+('031cqm9tbsdus65oqlvgt52aa3dva2jn', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695830059;is_user_in|b:1;user_id|s:1:\"1\";'),
+('s9grtc885nrkg52439fldv3mpk7cbl4c', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695830499;is_user_in|b:1;user_id|s:1:\"1\";'),
+('7vei1it06b5sk44ojotaer3t6r0vltal', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695832492;is_user_in|b:1;user_id|s:1:\"1\";'),
+('1gvvnrebg5v4qbjos9etkqs9t00b18jg', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695832975;is_user_in|b:1;user_id|s:1:\"1\";'),
+('i0f66q8st5qhhgib0rrk38g8ld5i3qm2', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695833349;is_user_in|b:1;user_id|s:1:\"1\";'),
+('7omcflanufrreu3lue9at755me362ujm', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695834338;is_user_in|b:1;user_id|s:1:\"1\";'),
+('g1iscg0sojit7k78goqhb38gmn5u84rr', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695834649;is_user_in|b:1;user_id|s:1:\"1\";'),
+('h532gv15o7vg5e2v0kalvr9n97pk00am', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695834978;is_user_in|b:1;user_id|s:1:\"1\";'),
+('2orv4he731msbo78p7to9qsgs54ki15b', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695835419;is_user_in|b:1;user_id|s:1:\"1\";'),
+('etqg0d4fetju73eaa6d4qgp3caeu7u1a', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695835748;is_user_in|b:1;user_id|s:1:\"1\";'),
+('e8p8lapspi24jue6fi2kcsnuovrtpunv', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695835748;is_user_in|b:1;user_id|s:1:\"1\";');
 
 -- --------------------------------------------------------
 
@@ -396,7 +423,7 @@ CREATE TABLE `master_admin_tbl` (
 --
 
 INSERT INTO `master_admin_tbl` (`m_admin_id`, `m_admin_login_id`, `m_admin_pass`, `m_admin_name`, `m_admin_email`, `m_admin_contact`, `m_admin_img`, `m_admin_status`) VALUES
-(1, 'admin', '12345', 'Admin', 'admin@gmail.com', '7879122060', 'fav_icon.png', 1);
+(1, 'admin', '123456', 'PSPU', 'pspunational@gmail.com', '9425234990,9303650593', 'logo.png', 1);
 
 -- --------------------------------------------------------
 
@@ -443,9 +470,16 @@ CREATE TABLE `master_category_tbl` (
 --
 
 INSERT INTO `master_category_tbl` (`m_category_id`, `m_category_title`, `m_category_image`, `m_category_des`, `m_category_added_on`, `m_category_status`) VALUES
-(1, 'dfsadsg', 'logo6.jpg', 'hello how are you ', '2022-11-09 13:13:36', 1),
-(3, 'gdfash', 'logo8.jpg', 'hello \r\n                                             ', '2022-11-09 16:07:55', 1),
-(4, 'wgqe', 'logo9.jpg', ' jfejkfesf\r\n                                             ', '2022-11-10 17:43:49', 0);
+(1, 'NEWS', 'logo6.jpg', 'NEWS', '2023-09-27 08:40:21', 1),
+(3, 'Blog', 'logo8.jpg', 'Blog', '2023-09-27 08:40:37', 1),
+(4, 'Event', 'logo9.jpg', 'Event', '2023-09-27 08:40:53', 1),
+(5, 'Press', '', ' Press', '2023-09-27 08:41:07', 1),
+(6, 'Popular', '', ' Popular', '2023-09-27 08:41:23', 1),
+(7, 'Upcoming Event', '', ' Upcoming  Event', '2023-09-27 08:41:52', 1),
+(8, 'What People Say', '', ' What People Say', '2023-09-27 08:42:12', 1),
+(9, 'Leadership Details', '', ' Leadership Details ', '2023-09-27 08:42:45', 1),
+(10, 'Morcha', '', ' Morcha', '2023-09-27 08:42:57', 1),
+(11, 'Election', '', ' Election', '2023-09-27 08:43:32', 1);
 
 -- --------------------------------------------------------
 
@@ -521,6 +555,69 @@ CREATE TABLE `master_designation_tbl` (
 
 INSERT INTO `master_designation_tbl` (`m_designation_id`, `m_designation_title`, `m_designation_added_on`, `m_designation_status`) VALUES
 (1, 'wdasdxasd', '2022-11-09 16:22:45', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `master_officer_tbl`
+--
+
+CREATE TABLE `master_officer_tbl` (
+  `m_officer_id` bigint(20) NOT NULL,
+  `m_officer_name` varchar(200) NOT NULL,
+  `m_officer_mobile` varchar(200) NOT NULL,
+  `m_officer_image` text NOT NULL,
+  `m_officer_email` varchar(200) NOT NULL,
+  `m_officer_gender` varchar(200) NOT NULL,
+  `m_officer_state` bigint(20) NOT NULL,
+  `m_officer_des` tinyint(1) NOT NULL,
+  `m_officer_address` text NOT NULL,
+  `m_officer_added_on` datetime NOT NULL,
+  `m_officer_status` int(11) NOT NULL COMMENT '0 = Pending, 1 = Active, 3 = Blocked'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `master_officer_tbl`
+--
+
+INSERT INTO `master_officer_tbl` (`m_officer_id`, `m_officer_name`, `m_officer_mobile`, `m_officer_image`, `m_officer_email`, `m_officer_gender`, `m_officer_state`, `m_officer_des`, `m_officer_address`, `m_officer_added_on`, `m_officer_status`) VALUES
+(5, 'DAMAN', '6266107525', 'logo4.jpg', 'daman@gmail.com', 'Male', 0, 1, 'raipur', '2022-11-07 16:13:51', 0),
+(7, 'lily', '6266107525', '7bcd6b57-dc62-4d5c-b5da-fad41a68b96e.png', 'lily2@gmail.com', 'Male', 2, 1, '   raipur  ', '2023-09-27 07:49:23', 1),
+(9, 'RADHESHYAM CHANDRAKAR', '7470632201', 'logo2.png', 'RADHECHANDRAKAR1975@GMAIL.COM', 'Male', 1, 1, '74 KA\r\nLAXMANPUR\r\nCHHUIKHADAN', '2023-09-27 07:39:48', 1),
+(10, 'CHANDRAKAR', '6261447765', 'Blue_Festive_Sweet_Seventeen_Birthday_Invitation_(4).png', 'ac20030203@gmail.com', 'Female', 2, 1, 'LAXMANPUR\r\nPOST BUN  ', '2023-09-27 07:48:28', 1),
+(11, 'BHUPESH DEWANGAN', '6266441310', 'footer.jpg', 'bhupesh20192019@gmail.com', 'Male', 1, 1, 'PANDARIYA, POST BUNDELI, TEH\r\nPOST BUNDELI', '2023-09-27 07:41:57', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `master_post_tbl`
+--
+
+CREATE TABLE `master_post_tbl` (
+  `id` bigint(20) NOT NULL,
+  `category` varchar(200) NOT NULL,
+  `title` varchar(200) NOT NULL,
+  `image` text NOT NULL,
+  `slug` varchar(200) NOT NULL,
+  `visibility` varchar(200) NOT NULL,
+  `right_column` varchar(200) NOT NULL,
+  `addtoslider` varchar(200) NOT NULL,
+  `created_date` datetime NOT NULL DEFAULT current_timestamp(),
+  `comments` varchar(200) NOT NULL,
+  `mainhead` varchar(200) NOT NULL,
+  `description` varchar(200) NOT NULL,
+  `m_post_added_on` datetime NOT NULL,
+  `m_post_status` int(11) NOT NULL COMMENT '0 = Pending, 1 = Active, 3 = Blocked'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `master_post_tbl`
+--
+
+INSERT INTO `master_post_tbl` (`id`, `category`, `title`, `image`, `slug`, `visibility`, `right_column`, `addtoslider`, `created_date`, `comments`, `mainhead`, `description`, `m_post_added_on`, `m_post_status`) VALUES
+(12, '3', 'hfh', '', 'fh', 'Yes', 'Yes', 'Yes', '2023-09-26 00:00:00', 'fgh', 'vncfgbx', ' ', '2023-09-27 22:17:33', 1),
+(14, '4', '4566', '2022-11-04.jpg', '56544', 'Yes', 'Yes', 'Yes', '2023-09-27 00:00:00', '35345', 'vncfgbx', ' ghgfdsghn ', '2023-09-27 22:55:10', 0),
+(15, '5', '4566', '2022-11-04.jpg', '56544', 'Yes', 'Yes', 'Yes', '2023-09-27 00:00:00', '35345', 'vncfgbx', ' ghgfdsghn    ', '2023-09-27 22:57:16', 1);
 
 -- --------------------------------------------------------
 
@@ -610,6 +707,8 @@ INSERT INTO `master_shop_working_day` (`m_working_day_id`, `m_working_shop`, `m_
 CREATE TABLE `master_slider_tbl` (
   `m_slider_id` bigint(20) NOT NULL,
   `m_slider_title` varchar(250) NOT NULL,
+  `m_slider_title_upper` text NOT NULL,
+  `m_slider_title_sub` text NOT NULL,
   `m_slider_image` text NOT NULL,
   `m_slider_order` int(11) NOT NULL,
   `m_slider_status` int(11) NOT NULL,
@@ -620,10 +719,10 @@ CREATE TABLE `master_slider_tbl` (
 -- Dumping data for table `master_slider_tbl`
 --
 
-INSERT INTO `master_slider_tbl` (`m_slider_id`, `m_slider_title`, `m_slider_image`, `m_slider_order`, `m_slider_status`, `m_slider_added_on`) VALUES
-(1, 'slider1', 'Rectangle_slider.png', 1, 1, '0000-00-00 00:00:00'),
-(2, 'slider2', 'Rectangle_slider.png', 2, 1, '0000-00-00 00:00:00'),
-(3, 'Slider3', 'Rectangle_slider.png', 3, 1, '0000-00-00 00:00:00');
+INSERT INTO `master_slider_tbl` (`m_slider_id`, `m_slider_title`, `m_slider_title_upper`, `m_slider_title_sub`, `m_slider_image`, `m_slider_order`, `m_slider_status`, `m_slider_added_on`) VALUES
+(1, 'Main Head Title', 'Upper Head Title', 'Sub Head Title', 'slider1.jpeg', 1, 1, '0000-00-00 00:00:00'),
+(2, 'Main Head Title', 'Upper Head Title', 'Sub Head Title', 'logo.png', 2, 1, '0000-00-00 00:00:00'),
+(3, 'Main Head Title', 'Upper Head Title', 'Sub Head Title', 'slider1.jpeg', 3, 1, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -772,6 +871,18 @@ ALTER TABLE `master_designation_tbl`
   ADD PRIMARY KEY (`m_designation_id`);
 
 --
+-- Indexes for table `master_officer_tbl`
+--
+ALTER TABLE `master_officer_tbl`
+  ADD PRIMARY KEY (`m_officer_id`);
+
+--
+-- Indexes for table `master_post_tbl`
+--
+ALTER TABLE `master_post_tbl`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `master_shop_tbl`
 --
 ALTER TABLE `master_shop_tbl`
@@ -833,13 +944,13 @@ ALTER TABLE `master_area_tbl`
 -- AUTO_INCREMENT for table `master_category_tbl`
 --
 ALTER TABLE `master_category_tbl`
-  MODIFY `m_category_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `m_category_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `master_city_tbl`
 --
 ALTER TABLE `master_city_tbl`
-  MODIFY `m_city_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `m_city_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `master_country_tbl`
@@ -852,6 +963,18 @@ ALTER TABLE `master_country_tbl`
 --
 ALTER TABLE `master_designation_tbl`
   MODIFY `m_designation_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `master_officer_tbl`
+--
+ALTER TABLE `master_officer_tbl`
+  MODIFY `m_officer_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `master_post_tbl`
+--
+ALTER TABLE `master_post_tbl`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `master_shop_tbl`
