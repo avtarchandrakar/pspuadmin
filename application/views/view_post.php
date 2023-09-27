@@ -85,9 +85,9 @@
                         <div class="col-md-8 col-sm-8 pull-right">
                             <div class="seipkon-breadcromb-right">
 
-                                <a href="<?php echo base_url('posts/add_post?id=') . $edit_value[0]->id; ?>" class="btn btn-info btn-vsm" title="Edit"><i class="fa fa-edit"></i> Edit</a>
+                                <a href="<?php echo base_url('post/add_post?id=') . $edit_value[0]->id; ?>" class="btn btn-info btn-vsm" title="Edit"><i class="fa fa-edit"></i> Edit</a>
 
-                                <a style="margin-right: 5px;" href="<?php echo site_url('posts/post_list') ?>" class="btn btn-info btn-vsm"><i class="fa fa-long-arrow-left"></i> Back</a>
+                                <a style="margin-right: 5px;" href="<?php echo site_url('post/post_list') ?>" class="btn btn-info btn-vsm"><i class="fa fa-long-arrow-left"></i> Back</a>
                             </div>
                         </div>
 
@@ -137,6 +137,10 @@
                                     <td><b><?php echo $edit_value[0]->visibility; ?></b></td>
                                 </tr>
                                 <tr>
+                                    <td class="wt-42"><i class="fa fa-map-marker"></i> Add to Slider</td>
+                                    <td><b><?php echo $edit_value[0]->addtoslider; ?></b></td>
+                                </tr>
+                                <tr>
                                     <td class="wt-42"><i class="fa fa-clock-o"></i> Status </td>
                                     <td><b><?php if ($edit_value[0]->m_post_status == 1) echo "Active";
                                             else {
@@ -167,17 +171,17 @@
                             </tr>
                             
                             <tr>
-                                <td>Gender:</td>
-                                <td><b><?php echo $edit_value[0]->m_post_gender; ?></b></td>
+                                <td>Comments:</td>
+                                <td><b><?php echo $edit_value[0]->comments; ?></b></td>
                             </tr>
                              <tr>
-                                <td>Designation Title:</td>
-                                <td><b><?php echo $edit_value[0]->m_designation_title; ?></b></td>
+                                <td>Main Heading:</td>
+                                <td><b><?php echo $edit_value[0]->mainhead; ?></b></td>
                             </tr>
 
                             <tr>
-                                <td>Address:</td>
-                                <td><b><?php echo $edit_value[0]->m_post_address; ?></b></td>
+                                <td>Description:</td>
+                                <td><b><?php echo $edit_value[0]->description; ?></b></td>
                             </tr>
 
                         </table>

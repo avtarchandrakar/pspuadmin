@@ -683,7 +683,7 @@ public function delete_officer_dtl(){
     }
 
     public function insert_post_dtl(){
-        $postid = $this->input->post('m_post_id');
+        $postid = $this->input->post('id');
 
             // for 1st image upload code.
             if(!empty($_FILES['m_post_image']['name'])){
@@ -745,7 +745,7 @@ public function get_post_dtl($id){
 
 
 public function delete_post_dtl(){
-  $this->db->where('m_post_id', $this->input->post('delete_id'));
+  $this->db->where('id', $this->input->post('delete_id'));
   $this->db->delete('master_post_tbl');
   return array( 'status'=>'success',
     'message'=>'Data has been Deleted Successfully!'

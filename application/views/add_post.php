@@ -262,7 +262,7 @@
                                         <?php if (!empty($id)) { ?>
                                             <div class="form-layout-submit"><a href="<?php echo site_url('post/post_list'); ?>" class="btn btn-block btn-danger">Cancel</a>
                                             <?php } else { ?>
-                                                <div class="form-layout-submit"><a href="<?php echo site_url('post/add_post_dlt'); ?>" class="btn btn-block btn-danger">Reset</a>
+                                                <div class="form-layout-submit"><a href="<?php echo site_url('post/post_list'); ?>" class="btn btn-block btn-danger">Reset</a>
                                                 <?php } ?>
                                                 </div>
                                             </div>
