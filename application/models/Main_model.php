@@ -22,6 +22,12 @@ class Main_model extends CI_model{
         $res = $this->db->get('master_category_tbl')->result();
         return $res;
     }
+
+    public function get_cat_list()
+    {
+        $res = $this->db->get('master_category_tbl')->result();
+        return $res;
+    }
     public function get_user_list($from_date,$to_date)
     {
         // if(!empty($branch)){
@@ -35,6 +41,8 @@ class Main_model extends CI_model{
         $res = $this->db->get('master_user_tbl')->result();
         return $res;
     }
+
+
 
     public function insert_user_dtl(){
         $userid = $this->input->post('m_user_id');
@@ -569,7 +577,178 @@ $this->db->insert('master_designation_tbl', $data);
     'message'=>'Data has been Deleted Successfully!'
   );
  }
-//-------- designation end -------------//
+//-------- officer end -------------//
 
 
+    public function get_officer_list($from_date,$to_date)
+    {
+        // if(!empty($branch)){
+        //   $this->db->where('m_student_curr_branch',$branch);
+        // }
+        if(!empty($from_date) && !empty($to_date))
+        {
+            $this->db->where('DATE_FORMAT(m_officer_added_on,"%Y-%m-%d")>=',$from_date);
+            $this->db->where('DATE_FORMAT(m_officer_added_on,"%Y-%m-%d")<=',$to_date);
+        }
+        $res = $this->db->get('master_officer_tbl')->result();
+        return $res;
+    }
+
+    public function insert_officer_dtl(){
+        $officerid = $this->input->post('m_officer_id');
+
+            // for 1st image upload code.
+            if(!empty($_FILES['m_officer_image']['name'])){
+              $config['file_name'] = $_FILES['m_officer_image']['name'];
+              $config['upload_path'] = 'uploads/officer';
+              $config['allowed_types'] = 'jpg|jpeg|png';
+              $config['remove_spaces'] = TRUE;
+              $config['file_name'] = $_FILES['m_officer_image']['name'];
+              //Load upload library and initialize configuration
+              $this->load->library('upload',$config);
+              $this->upload->initialize($config);
+              if($this->upload->do_upload('m_officer_image')){
+                $uploadData = $this->upload->data();  
+                if (!empty($update_data['m_officer_image'])) { 
+                  if(file_exists($config['m_officer_image'].$update_data['m_officer_image'])){
+                  unlink($config['upload_path'].$update_data['m_officer_image']); /* deleting Image */
+                  } 
+                }
+                $m_officer_image = $uploadData['file_name'];
+              }
+            }
+            else{
+    $m_officer_image = $this->input->post('m_officer_image1');
+  }
+  $data = array(
+    "m_officer_name" => $this->input->post('m_officer_name'),
+    "m_officer_mobile" => $this->input->post('m_officer_mobile'),
+    "m_officer_image" => $m_officer_image,
+    "m_officer_state" => $this->input->post('m_officer_state'),
+    // "m_student_area" => $this->input->post('m_student_area'),
+    "m_officer_email" => $this->input->post('m_officer_email'),
+    "m_officer_address" => $this->input->post('m_officer_address'),
+    "m_officer_gender" => $this->input->post('m_officer_gender'),
+    "m_officer_des" => $this->input->post('m_officer_des'),
+    "m_officer_added_on"=>date('Y-m-d H:i:s'),
+    "m_officer_status" => $this->input->post('m_officer_status'),
+     
+  );
+if(!empty($officerid)){
+$this->db->where('m_officer_id',$officerid)->update('master_officer_tbl', $data);
+}else{
+$this->db->insert('master_officer_tbl', $data);
+}
+ 
+  return true;
+}
+
+
+public function get_officer_dtl($id){
+  $this->db->select('*');
+  $this->db->where('m_officer_id', $id);
+   // $this->db->join('master_state_tbl','master_state_tbl.m_state_id = master_state_tbl.m_student_state','left');
+  $this->db->join('master_state_tbl','master_state_tbl.m_state_id = master_officer_tbl.m_officer_state','left');
+  $this->db->join('master_designation_tbl','master_designation_tbl.m_designation_id = master_officer_tbl.m_officer_des','left');
+  $res = $this->db->get('master_officer_tbl')->result();
+//  echo "<pre>";print_r($res);die();
+  return $res;
+}
+
+
+public function delete_officer_dtl(){
+  $this->db->where('m_officer_id', $this->input->post('delete_id'));
+  $this->db->delete('master_officer_tbl');
+  return array( 'status'=>'success',
+    'message'=>'Data has been Deleted Successfully!'
+  );
+}
+
+
+
+// -------- Post 
+
+    public function get_post_list($from_date,$to_date)
+    {
+        $this->db->select('master_post_tbl.*,master_category_tbl.m_category_title as category_name');
+        if(!empty($from_date) && !empty($to_date))
+        {
+            $this->db->where('DATE_FORMAT(m_post_added_on,"%Y-%m-%d")>=',$from_date);
+            $this->db->where('DATE_FORMAT(m_post_added_on,"%Y-%m-%d")<=',$to_date);
+        }
+        $this->db->join('master_category_tbl','master_category_tbl.m_category_id = master_post_tbl.category','left');
+        $res = $this->db->get('master_post_tbl')->result();
+
+        return $res;
+    }
+
+    public function insert_post_dtl(){
+        $postid = $this->input->post('m_post_id');
+
+            // for 1st image upload code.
+            if(!empty($_FILES['m_post_image']['name'])){
+              $config['file_name'] = $_FILES['m_post_image']['name'];
+              $config['upload_path'] = 'uploads/post';
+              $config['allowed_types'] = 'jpg|jpeg|png';
+              $config['remove_spaces'] = TRUE;
+              $config['file_name'] = $_FILES['m_post_image']['name'];
+              //Load upload library and initialize configuration
+              $this->load->library('upload',$config);
+              $this->upload->initialize($config);
+              if($this->upload->do_upload('m_post_image')){
+                $uploadData = $this->upload->data();  
+                if (!empty($update_data['m_post_image'])) { 
+                  if(file_exists($config['m_post_image'].$update_data['m_post_image'])){
+                  unlink($config['upload_path'].$update_data['m_post_image']); /* deleting Image */
+                  } 
+                }
+                $m_post_image = $uploadData['file_name'];
+              }
+            }
+            else{
+    $m_post_image = $this->input->post('m_post_image1');
+  }
+  $data = array(
+    "category" => $this->input->post('category'),
+    "title" => $this->input->post('title'),
+    "image" => $m_post_image,
+    "slug" => $this->input->post('slug'),
+    "visibility" => $this->input->post('visibility'),
+    "right_column" => $this->input->post('right_column'),
+    "addtoslider" => $this->input->post('addtoslider'),
+    "created_date" => date("Y-m-d", strtotime($this->input->post('created_date'))),
+    "comments" => $this->input->post('comments'),
+    "mainhead" => $this->input->post('mainhead'),
+    "description" => $this->input->post('description'),
+    "m_post_added_on"=>date('Y-m-d H:i:s'),
+    "m_post_status" => $this->input->post('m_post_status'),
+     
+  );
+if(!empty($postid)){
+$this->db->where('id',$postid)->update('master_post_tbl', $data);
+}else{
+$this->db->insert('master_post_tbl', $data);
+}
+ 
+  return true;
+}
+
+
+public function get_post_dtl($id){
+  $this->db->select('*');
+  $this->db->where('id', $id);
+  $this->db->join('master_category_tbl','master_category_tbl.m_category_id = master_post_tbl.category','left');
+  $res = $this->db->get('master_post_tbl')->result();
+//  echo "<pre>";print_r($res);die();
+  return $res;
+}
+
+
+public function delete_post_dtl(){
+  $this->db->where('m_post_id', $this->input->post('delete_id'));
+  $this->db->delete('master_post_tbl');
+  return array( 'status'=>'success',
+    'message'=>'Data has been Deleted Successfully!'
+  );
+}
 }

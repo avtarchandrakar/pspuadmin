@@ -39,7 +39,9 @@
                        <thead>
                            <tr>
                                 <th width="5%">#</th>
-                                <th>Title</th>
+                                <th>Main Head Title</th>
+                                <th>Upper Head Title</th>
+                                <th>Sub Head Title</th>
                                 <th>Image</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -55,6 +57,9 @@
                                <tr>
                                  <td><?php echo $i;?></td>
                                  <td><?php echo $value->m_slider_title;?></td>
+                                 <td><?php echo $value->m_slider_title_upper;?></td>
+                                 <td><?php echo $value->m_slider_title_sub;?></td>
+
                                  <td>
                                     <button  class="btn btn-success btn-action btn-block" data-toggle="modal" data-target="#myModal<?php echo $value->m_slider_id;?>" title="View">View</button>
 

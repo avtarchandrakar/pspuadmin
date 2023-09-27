@@ -213,6 +213,8 @@ class Master_model extends CI_model{
 	    }
 	    $s_data = array(
 	      "m_slider_title" => $this->input->post('m_slider_title'),
+		    "m_slider_title_upper"    => $this->input->post('m_slider_title_upper'),
+		    "m_slider_title_sub"    => $this->input->post('m_slider_title_sub'),
 	      "m_slider_status" => $this->input->post('m_slider_status'),
 	      "m_slider_image" => $m_slider_image,
 	      "m_slider_added_on" => date('Y-m-d H:i'),
@@ -247,6 +249,8 @@ class Master_model extends CI_model{
 	    }
 	    $s_data = array(
 	      "m_slider_title" => $this->input->post('m_slider_title'),
+	      "m_slider_title_upper"    => $this->input->post('m_slider_title_upper'),
+		    "m_slider_title_sub"    => $this->input->post('m_slider_title_sub'),
 	      "m_slider_status" => $this->input->post('m_slider_status'),
 	      "m_slider_image" => $m_slider_image,
 	    );

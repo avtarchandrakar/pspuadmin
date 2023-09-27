@@ -39,8 +39,20 @@
                         <div class="row">
                            <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Title<span class="text-danger">*</span></label>
+                                 <label>Main Head Title<span class="text-danger">*</span></label>
                                  <input type="text" name="m_slider_title" id="m_slider_title" class="form-control"  placeholder=" Enter Title" required="" >
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="form-group">
+                                 <label>Upper Head Title<span class="text-danger">*</span></label>
+                                 <input type="text" name="m_slider_title_upper" id="m_slider_title_upper" class="form-control"  placeholder=" Enter Title" required="" >
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="form-group">
+                                 <label>Sub Head Title<span class="text-danger">*</span></label>
+                                 <input type="text" name="m_slider_title_sub" id="m_slider_title_sub" class="form-control"  placeholder=" Enter Title" required="" >
                               </div>
                            </div>
                            <div class="col-md-4">

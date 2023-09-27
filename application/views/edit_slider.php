@@ -39,9 +39,23 @@
                         <div class="row">
                            <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Title<span class="text-danger">*</span></label>
+                                 <label>Main Head Title<span class="text-danger">*</span></label>
                                  <input type="hidden" name="m_slider_id" value="<?php echo $a_value[0]->m_slider_id?>">
                                  <input type="text" name="m_slider_title" id="m_slider_title" class="form-control"  placeholder=" Enter Title" required="" value="<?php echo $a_value[0]->m_slider_title?>">
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="form-group">
+                                 <label>Upper Head Title<span class="text-danger">*</span></label>
+                                 <input type="hidden" name="m_slider_id" value="<?php echo $a_value[0]->m_slider_id?>">
+                                 <input type="text" name="m_slider_title_upper" id="m_slider_title_upper" class="form-control"  placeholder=" Enter Title" required="" value="<?php echo $a_value[0]->m_slider_title_upper?>">
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="form-group">
+                                 <label>Sub Head Title<span class="text-danger">*</span></label>
+                                 <input type="hidden" name="m_slider_id" value="<?php echo $a_value[0]->m_slider_id?>">
+                                 <input type="text" name="m_slider_title_sub" id="m_slider_title_sub" class="form-control"  placeholder=" Enter Title" required="" value="<?php echo $a_value[0]->m_slider_title_sub?>">
                               </div>
                            </div>
                            <div class="col-md-4">

@@ -38,6 +38,8 @@ public function insert_slider(){
 
   $insert_data = array(
     "m_slider_title"    => $this->input->post('m_slider_title'),
+    "m_slider_title_upper"    => $this->input->post('m_slider_title_upper'),
+    "m_slider_title_sub"    => $this->input->post('m_slider_title_sub'),
     "m_slider_img"   => $m_slider_img,
     "m_slider_desc"=> $this->input->post('m_slider_desc'),
     "m_slider_status"    => $this->input->post('m_slider_status'),
@@ -84,6 +86,8 @@ public function update_slider(){
 
       $data = array(
      "m_slider_title"    => $this->input->post('m_slider_title'),
+     "m_slider_title_upper"    => $this->input->post('m_slider_title_upper'),
+     "m_slider_title_sub"    => $this->input->post('m_slider_title_sub'),
      "m_slider_img"   => $m_slider_img,
      "m_slider_desc"=> $this->input->post('m_slider_desc'),
      "m_slider_status"    => $this->input->post('m_slider_status'),

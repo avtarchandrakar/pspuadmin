@@ -139,9 +139,7 @@
                                         <div class="form-group">
                                             <label>Category Description</label>
                                             <textarea name="m_category_des" id="m_category_des" 
-                                             class="form-control" placeholder="Enter Your Permanent Address"> 
-                                            <?php echo $description; ?> </textarea>
-                                           <!--  <input type="text" name="m_student_address" id="m_student_address" class="form-control" placeholder="Enter Your Permanent Address" value="<?= $address; ?>"> -->
+                                             class="form-control" placeholder="Enter Your Permanent Address"><?php echo $description; ?> </textarea>
                                         </div>
                                     </div>
                                 </div>

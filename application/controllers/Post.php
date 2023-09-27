@@ -1,43 +1,41 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Kolkata');
- class Users extends CI_Controller{
+ class Post extends CI_Controller{
    
-    public function user_list(){ $data = $this->login_details();
-        $data['pagename'] = "All User Details";
+    public function post_list(){ $data = $this->login_details();
+        $data['pagename'] = "All Post";
         $data['from_date'] ='';
         $data['to_date'] ='';
         $data['from_date'] = $this->input->get('from_date');
         $data['to_date'] = $this->input->get('to_date');
-        //echo "<pre>";print_r($data['all_value']);die();
-        // $data['globel_branch'] = $this->Main_model->get_globel_branch();
-        $data['Designation_dtl'] = $this->Main_model->get_desig_nation_list();
-        $data['city_dtl'] = $this->Main_model->get_all_city_list();
-        $data['mech_value'] = $this->Main_model->get_user_list($data['from_date'],$data['to_date']);
-        $this->load->view('user_list', $data);
+        $data['cat_list'] = $this->Main_model->get_cat_list();
+        $data['state_dtl'] = $this->Main_model->get_all_state_list();
+        $data['mech_value'] = $this->Main_model->get_post_list($data['from_date'],$data['to_date']);
+        $this->load->view('post_list', $data);
       
       }
 
-      public function add_user(){ 
+      public function add_post(){ 
 
        $data = $this->login_details();
         $data['id'] = $this->input->get('id');
-        if(!empty($data['id'] )){ $data['pagename'] = "Edit User Details"; }else{
-          $data['pagename'] = "Add User Details"; 
+        if(!empty($data['id'] )){ $data['pagename'] = "Edit Post Details"; }else{
+          $data['pagename'] = "Add Post Details"; 
         }
-        $data['city_dtl'] = $this->Main_model->get_all_city_list();
-        $data['Designation_dtl'] = $this->Main_model->get_desig_nation_list();
-        $data['edit_value'] = $this->Main_model->get_user_dtl($data['id']);
+        $data['state_dtl'] = $this->Main_model->get_all_state_list();
+        $data['cat_list'] = $this->Main_model->get_cat_list();
+        $data['edit_value'] = $this->Main_model->get_post_dtl($data['id']);
        
       //  print_r($data['edit_value']);die();
-        $this->load->view('add_user', $data);
+        $this->load->view('add_post', $data);
       }
 
-      public function insert_user_dtl(){
+      public function insert_post_dtl(){
         if ($this->ajax_login() === false){ return; }
         if($_SERVER["REQUEST_METHOD"] == "POST"){
-          if($data = $this->Main_model->insert_user_dtl()){
+          if($data = $this->Main_model->insert_post_dtl()){
             $info = array( 'status'=>'success',
-            'message'=>'User  has been Added successfully!'
+            'message'=>'Post  has been Added successfully!'
             );
           }
           else{ 
@@ -49,17 +47,18 @@ date_default_timezone_set('Asia/Kolkata');
         }
       }
 
-       public function view_user_dtl(){ $data = $this->login_details();
-        $data['pagename'] = "User Details";
+       public function view_post_dtl(){ $data = $this->login_details();
+        $data['pagename'] = "Post Details";
         $data['id'] = $this->input->get('id');
-        $data['edit_value'] = $this->Main_model->get_user_dtl($data['id']);
+        $data['edit_value'] = $this->Main_model->get_post_dtl($data['id']);
         // $data['get_a_student'] = $this->Main_model->get_a_student($data['edit_value'][0]->m_user_id);
         // $data['get_all_plan'] = $this->Main_model->get_all_plan();
-       $this->load->view('view_user', $data);
+       $this->load->view('view_post', $data);
+      
       }
-      public function delete_user_dtl(){ if ($this->ajax_login() === false) { return; }
+      public function delete_post_dtl(){ if ($this->ajax_login() === false) { return; }
           if($_SERVER["REQUEST_METHOD"] == "POST"){
-            if($info = $this->Main_model->delete_user_dtl()){
+            if($info = $this->Main_model->delete_post_dtl()){
             }
             else{ 
               $info = array( 'status'=>'error',

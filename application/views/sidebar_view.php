@@ -115,7 +115,17 @@
 
         <ul class="nav  nav-pills-circle">
 
+          <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Post List">
 
+            <a style="background: deepskyblue; color: white;" class="nav-link text-center m-2" href="<?php echo site_url('Post/post_list'); ?>"> <i class="fa fa-user"></i> </a>
+
+          </li>
+
+          <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Officer List">
+
+            <a style="background: deepskyblue; color: white;" class="nav-link text-center m-2" href="<?php echo site_url('Officer/officer_list'); ?>"> <i class="fa fa-user"></i> </a>
+
+          </li>
 
           <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Users List">
 
@@ -157,11 +167,24 @@
 
         </li>
         
+        <li li class="">
+
+          <a href="<?php echo site_url('post/post_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/student.png');?>"> Post List </a>
+
+        </li>
+
+        <li li class="">
+
+          <a href="<?php echo site_url('Officer/officer_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/student.png');?>"> Officer List </a>
+
+        </li>
+        
         <li class="">
 
           <a href="<?php echo site_url('Users/user_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/student.png');?>"> Users List </a>
 
         </li>
+
 
         <li class="">
 
