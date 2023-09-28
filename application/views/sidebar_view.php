@@ -169,13 +169,13 @@
         
         <li li class="">
 
-          <a href="<?php echo site_url('post/post_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/student.png');?>"> Post List </a>
+          <a href="<?php echo site_url('post/post_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/booking.png');?>"> Post List </a>
 
         </li>
 
         <li li class="">
 
-          <a href="<?php echo site_url('Officer/officer_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/student.png');?>"> Officer List </a>
+          <a href="<?php echo site_url('Officer/officer_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/membership.png');?>"> Officer List </a>
 
         </li>
         
@@ -188,7 +188,7 @@
 
         <li class="">
 
-          <a href="<?php echo site_url('Shops/shop_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/Shop.webp');?>"  style=" height:20px; width: 20px; margin-left: ;">&nbsp;Shop </a>
+          <a href="<?php echo site_url('Shops/shop_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/Shop.webp');?>"  style=" height:20px; width: 20px; margin-left: ;">&nbsp;Registraion </a>
 
         </li>
 

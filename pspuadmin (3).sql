@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 27, 2023 at 07:31 PM
+-- Generation Time: Sep 28, 2023 at 07:53 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -399,7 +399,24 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `user_agent`, `timestamp`, `data`
 ('h532gv15o7vg5e2v0kalvr9n97pk00am', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695834978;is_user_in|b:1;user_id|s:1:\"1\";'),
 ('2orv4he731msbo78p7to9qsgs54ki15b', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695835419;is_user_in|b:1;user_id|s:1:\"1\";'),
 ('etqg0d4fetju73eaa6d4qgp3caeu7u1a', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695835748;is_user_in|b:1;user_id|s:1:\"1\";'),
-('e8p8lapspi24jue6fi2kcsnuovrtpunv', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695835748;is_user_in|b:1;user_id|s:1:\"1\";');
+('e8p8lapspi24jue6fi2kcsnuovrtpunv', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695835748;is_user_in|b:1;user_id|s:1:\"1\";'),
+('brbuduvh1rqfkda7ba2ugq01pdhk3g6u', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695871077;is_user_in|b:1;user_id|s:1:\"1\";'),
+('g5oa6off3cjjgllo60vubroikhsv221f', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695871432;is_user_in|b:1;user_id|s:1:\"1\";'),
+('85nlj8d4oqqhoscdbihang90ljfhuu42', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695871989;is_user_in|b:1;user_id|s:1:\"1\";'),
+('h3nca5srucu3njpilp0cdu8no9pqhtu4', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695872298;is_user_in|b:1;user_id|s:1:\"1\";'),
+('833f0kum371ker46u9pqihnitq4pfjc3', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695872866;is_user_in|b:1;user_id|s:1:\"1\";'),
+('326ruhh67296396hn0tmt4pj2lk8i8nr', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695873422;is_user_in|b:1;user_id|s:1:\"1\";'),
+('9u4s6fbch6a0436magjv6mrmmob0qls5', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695873422;is_user_in|b:1;user_id|s:1:\"1\";'),
+('p1g53038cs1770lqp1a0v3l0a5o6vhad', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695919637;is_user_in|b:1;user_id|s:1:\"1\";'),
+('ffqokm1i6l5rf0166gib6odko7qqudde', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695920531;is_user_in|b:1;user_id|s:1:\"1\";'),
+('uaggguotb1j3l6s7ohpv9fmnrf1mfp9b', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695921104;is_user_in|b:1;user_id|s:1:\"1\";'),
+('7muhq8b77hp0rvl6f850f0tiepp0stk6', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695921595;is_user_in|b:1;user_id|s:1:\"1\";'),
+('f2east8gnfdlg5enseon6mkgj7s462rf', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695921926;is_user_in|b:1;user_id|s:1:\"1\";'),
+('9oup6v1ilsdt3ioc9uqrrfpnkf9kj5l1', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695922385;is_user_in|b:1;user_id|s:1:\"1\";'),
+('cddi2ctck2qs7m1bep8vqf6evndj49f8', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695922771;is_user_in|b:1;user_id|s:1:\"1\";'),
+('6v3rb6buq22hqvql35ftqgna8jldokrc', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695923170;is_user_in|b:1;user_id|s:1:\"1\";'),
+('neag3gn1p73rl2ljt2dl2qufgu6beefc', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695923500;is_user_in|b:1;user_id|s:1:\"1\";'),
+('cm8i731ptd5trtj9oij6r2vjv6shj7eg', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1695923500;is_user_in|b:1;user_id|s:1:\"1\";');
 
 -- --------------------------------------------------------
 
@@ -605,6 +622,9 @@ CREATE TABLE `master_post_tbl` (
   `created_date` datetime NOT NULL DEFAULT current_timestamp(),
   `comments` varchar(200) NOT NULL,
   `mainhead` varchar(200) NOT NULL,
+  `location` varchar(200) NOT NULL,
+  `short_description` text NOT NULL,
+  `created_time` time NOT NULL,
   `description` varchar(200) NOT NULL,
   `m_post_added_on` datetime NOT NULL,
   `m_post_status` int(11) NOT NULL COMMENT '0 = Pending, 1 = Active, 3 = Blocked'
@@ -614,10 +634,11 @@ CREATE TABLE `master_post_tbl` (
 -- Dumping data for table `master_post_tbl`
 --
 
-INSERT INTO `master_post_tbl` (`id`, `category`, `title`, `image`, `slug`, `visibility`, `right_column`, `addtoslider`, `created_date`, `comments`, `mainhead`, `description`, `m_post_added_on`, `m_post_status`) VALUES
-(12, '3', 'hfh', '', 'fh', 'Yes', 'Yes', 'Yes', '2023-09-26 00:00:00', 'fgh', 'vncfgbx', ' ', '2023-09-27 22:17:33', 1),
-(14, '4', '4566', '2022-11-04.jpg', '56544', 'Yes', 'Yes', 'Yes', '2023-09-27 00:00:00', '35345', 'vncfgbx', ' ghgfdsghn ', '2023-09-27 22:55:10', 0),
-(15, '5', '4566', '2022-11-04.jpg', '56544', 'Yes', 'Yes', 'Yes', '2023-09-27 00:00:00', '35345', 'vncfgbx', ' ghgfdsghn    ', '2023-09-27 22:57:16', 1);
+INSERT INTO `master_post_tbl` (`id`, `category`, `title`, `image`, `slug`, `visibility`, `right_column`, `addtoslider`, `created_date`, `comments`, `mainhead`, `location`, `short_description`, `created_time`, `description`, `m_post_added_on`, `m_post_status`) VALUES
+(12, '3', 'hfh', '', 'fh', 'Yes', 'Yes', 'Yes', '2023-09-28 00:00:00', 'fgh', 'vncfgbx', 'Raipur', 'Summary & Description (Meta Tag)', '01:40:00', ' Description', '2023-09-28 23:10:37', 1),
+(14, '4', '4566', '2022-11-04.jpg', '56544', 'Yes', 'Yes', 'Yes', '2023-09-27 00:00:00', '35345', 'vncfgbx', '', '', '01:20:00', ' ghgfdsghn ', '2023-09-28 23:09:44', 0),
+(15, '5', '4566', '2022-11-04.jpg', '56544', 'Yes', 'Yes', 'Yes', '2023-09-27 00:00:00', '35345', 'vncfgbx', '', '', '01:50:00', ' ghgfdsghn    ', '2023-09-28 23:09:59', 1),
+(16, '4', 'tyjgfdrfgh', '2022-11-041.jpg', 'rtjkrth', 'No', 'No', 'Yes', '2023-09-28 00:00:00', '454545', 'vncfgbx', 'Raipur', 'retert', '05:30:00', 'ertret', '2023-09-28 22:34:13', 1);
 
 -- --------------------------------------------------------
 
@@ -655,7 +676,7 @@ CREATE TABLE `master_shop_tbl` (
 --
 
 INSERT INTO `master_shop_tbl` (`m_shop_id`, `m_shop_name`, `m_shop_contact`, `m_shop_alt_contact`, `m_shop_image`, `m_shop_email`, `m_shop_address`, `m_shop_category`, `m_shop_state`, `m_shop_city`, `m_shop_adhar_no`, `m_shop_adhar_f`, `m_shop_adhar_b`, `m_shop_pan_no`, `m_shop_pan_img`, `m_shop_cheque_img`, `m_shop1`, `m_shop_pincode`, `m_shop_open`, `m_shop_close`, `m_shop_added_on`, `m_shop_status`) VALUES
-(25, 'medical', '2423435324', '6266107525', 'Screenshot_(7)4.png', 'fdgdfgb@gmail.com', ' \r\n                                 \r\n                                 jwnqdjwqd   ', 1, 1, 2, '34333333333', 'Screenshot_(4)3.png', 'Screenshot_(4)4.png', '21312312321', 'Screenshot_(6)18.png', '', '', 254326, '15:16:00', '15:17:00', '2022-11-24 16:32:24', 1),
+(25, 'medical', '2423435324', '6266107525', 'Screenshot_(7)4.png', 'fdgdfgb@gmail.com', ' \r\n                                 \r\n                                 jwnqdjwqd   ', 1, 1, 2, '34333333333', '6201f8b14655a04c95349dbf1.jpg', '1672288927_9db470d8dcd572b26ab7_(2)1.jpeg', '21312312321', '1672288927_9db470d8dcd572b26ab7.jpeg', '', '', 254326, '15:16:00', '15:17:00', '2022-11-24 16:32:24', 1),
 (26, 'medical', '2423435324', '6266107525', 'Screenshot_(7)4.png', 'fdgdfgb@gmail.com', ' \r\n                                 \r\n                                 \r\n                                 jwnqdjwqd    ', 1, 1, 2, '34333333333', 'Screenshot_(5)1.png', 'Screenshot_(4)4.png', '21312312321', 'Screenshot_(6)18.png', '', '', 254326, '15:16:00', '15:17:00', '2022-11-24 16:59:54', 1),
 (27, 'dgfdgfd', '7979797965', '6767868687', '', 'ghfghfgh@hgh.j', ' \r\n                                 jhjkhkj', 1, 1, 3, '', '', '', '', '', '', '', 490023, '19:02:00', '20:02:00', '2022-11-24 17:02:44', 0),
 (28, 'medical', '2423435324', '6266107525', 'Screenshot_(7)4.png', 'fdgdfgb@gmail.com', ' jwnqdjwqd    ', 1, 1, 2, '34333333333', 'Screenshot_(6)19.png', 'Screenshot_(6)20.png', '21312312321', 'Screenshot_(6)21.png', '', '', 254326, '15:16:00', '15:17:00', '2022-11-24 17:13:55', 1),
@@ -974,7 +995,7 @@ ALTER TABLE `master_officer_tbl`
 -- AUTO_INCREMENT for table `master_post_tbl`
 --
 ALTER TABLE `master_post_tbl`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `master_shop_tbl`

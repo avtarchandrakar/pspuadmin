@@ -4,7 +4,7 @@ class Shops extends CI_Controller
 {
     
   public function shop_list(){ $data = $this->login_details();
-        $data['pagename'] = "All shop Details";
+        $data['pagename'] = "All Registraion Details";
         $data['from_date'] ='';
         $data['to_date'] ='';
         $data['from_date'] = $this->input->get('from_date');
@@ -22,8 +22,8 @@ class Shops extends CI_Controller
 
        $data = $this->login_details();
         $data['id'] = $this->input->get('id');
-        if(!empty($data['id'] )){ $data['pagename'] = "Edit shop Details"; }else{
-          $data['pagename'] = "Add shop Details"; 
+        if(!empty($data['id'] )){ $data['pagename'] = "Edit Registraion Details"; }else{
+          $data['pagename'] = "Add Registraion Details"; 
         }
         $data['category_dtl'] = $this->Main_model->get_shop_cat_list();
         $data['city_dtl'] = $this->Main_model->get_all_city_list();
@@ -38,8 +38,8 @@ public function edit_shop(){
 
        $data = $this->login_details();
         $data['id'] = $this->input->get('id');
-        if(!empty($data['id'] )){ $data['pagename'] = "Edit shop Details"; }else{
-          $data['pagename'] = "Add shop Details"; 
+        if(!empty($data['id'] )){ $data['pagename'] = "Edit Registraion Details"; }else{
+          $data['pagename'] = "Add Registraion Details"; 
         }
         $data['category_dtl'] = $this->Main_model->get_shop_cat_list();
         $data['city_dtl'] = $this->Main_model->get_all_city_list();

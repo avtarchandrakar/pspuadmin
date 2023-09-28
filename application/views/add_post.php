@@ -1,6 +1,9 @@
 <!--=========================View==============Fix========== -->
 <!-- ========================Header==============Fix========= -->
-<?php $this->view('top_header') ?>
+<?php $this->view('top_header');
+   echo  link_tag('assets/css/jquery-ui.css'); 
+   echo  link_tag('assets/css/jquery.timepicker.min.css'); ?>
+
 <!-- =======================/Header==============Fix========= -->
 <!-- =========================View===============Fix========= -->
 <div class="page-content">
@@ -217,14 +220,14 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Date</label>
-                                            <input type="date" name="created_date" id="created_date" class="form-control cdate" placeholder="Name of Date & Time" value="<?= $created_date; ?>">
+                                            <input type="text" name="created_date" id="created_date" class="form-control datepicker" placeholder="Name of Date & Time" value="<?= $created_date; ?>">
                                         </div>
                                     </div>
 
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Time</label>
-                                            <input type="time" name="created_time" id="time" class="form-control" placeholder="Name of Time" value="<?= $created_time; ?>">
+                                            <input type="text" name="created_time" id="time" class="form-control timepicker" placeholder="Name of Time" value="<?= $created_time; ?>">
                                         </div>
                                     </div>
 
@@ -312,4 +315,31 @@
 <?php $this->view('top_footer');
 $this->view('js/post_js');
 ?>
+
+<script src="<?php echo base_url('assets/js/jquery-ui.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/jquery.timepicker.min.js')?>"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $( ".datepicker" ).datepicker({
+            autoclose: true,
+            format: "dd-mm-yyyy",
+            immediateUpdates: true,
+            todayBtn: true,
+            todayHighlight: true
+        });
+        // $('.cdate').val(getCurDate());
+        $('.timepicker').timepicker({
+            timeFormat: 'h:mm p',
+            interval: 10,
+            // minTime: '10',
+            // maxTime: '12:00pm',
+            defaultTime: '11',
+            startTime: '1:00',
+            dynamic: false,
+            dropdown: true,
+            scrollbar: true
+        });
+    })
+</script>
 <!-- =======================/Footer================Fix=======

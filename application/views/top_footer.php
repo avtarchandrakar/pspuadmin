@@ -2,7 +2,7 @@
 
             <footer class="seipkon-footer-area">
 
-               <p><?php echo get_settings('m_app_name'); ?> | Design & Developed by <a href="https://logixhunt.com/">Logixhunt</a></p>
+               <p><?php echo get_settings('m_app_name'); ?> | Design & Developed by <a href="#">AvtarSoft</a></p>
 
             </footer>
 
@@ -130,7 +130,6 @@
 
 <?php $this->view('js/sidebar_js') ?>
 <!-- <script src="<?php echo base_url('assets/js/jquery-3.1.0.min.js') ?>"></script> -->
-<script src="<?php echo base_url('assets/js/jquery-ui.min.js')?>"></script>
 <script type="text/javascript">
 
     $('.btn').filter(':not([title])').attr('title','Click Here');

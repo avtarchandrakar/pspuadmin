@@ -48,7 +48,7 @@
                     <div class="col-md-6 col-sm-6 pull-right">
                     <div class="seipkon-breadcromb-right">
                         
-                          <a href="<?php echo site_url('Shops/add_shop') ?>" class="btn btn-info btn-vsm"><i class="fa fa-plus-circle"></i> Add New Shop</a>
+                          <a href="<?php echo site_url('Shops/add_shop') ?>" class="btn btn-info btn-vsm"><i class="fa fa-plus-circle"></i> Add New Registraion</a>
                     </div>
                     </div>
                  

@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-md-3 col-sm-3 pull-right">
                             <div class="seipkon-breadcromb-right">
-                                <a href="<?php echo site_url('Shops/shop_list'); ?>" class="btn btn-info btn-vsm"><i class="fa fa-list-alt"></i> All Shop</a>
+                                <a href="<?php echo site_url('Shops/shop_list'); ?>" class="btn btn-info btn-vsm"><i class="fa fa-list-alt"></i> All Registraion</a>
                             </div>
                         </div>
                     </div>
@@ -81,9 +81,9 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Shop Name</label>
+                                <label>Registraion Name</label>
                                 
-                                <input type="text" name="m_shop_name" id="m_shop_name" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="Name of Shop" required="" value="">
+                                <input type="text" name="m_shop_name" id="m_shop_name" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="Name of Registraion" required="" value="">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -106,7 +106,7 @@
                         </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label>Shop Category</label>
+                                <label>Registraion Category</label>
                                 
                                 <select name="m_shop_category" id="category" class="form-control select2">
                                     <option value="">Select Category</option>
@@ -132,7 +132,7 @@
                         </div>
                     <div class="col-md-4">
                             <div class="form-group">
-                                <label>Shop State</label>
+                                <label> State</label>
                                 
                                  <select name="m_shop_state" id="state" class="form-control select2">
                                     <option value="">Select State</option>
@@ -158,7 +158,7 @@
                         </div>  
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Shop City</label>
+                                <label> City</label>
                                 <select name="m_shop_city" id="city" class="form-control select2">
                                     <option value="">Select City</option>
                                     <?php
@@ -190,7 +190,7 @@
                         </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label>Shop Opening Time</label>
+                                <label>Registraion Opening Time</label>
                                
                                 <input type="time" name="m_shop_open_time" id="m_shop_open_time" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="Opening of Shop" required="" value="">
                             </div>
@@ -198,7 +198,7 @@
 
                          <div class="col-md-4">
                             <div class="form-group">
-                                <label>Shop closing Time</label>
+                                <label>Registraion closing Time</label>
                                 
                                 <input type="time" name="m_shop_close_time" id="m_shop_close_time" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="closing of Shop" required="" value="">
                             </div>
@@ -207,7 +207,7 @@
 
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label>Shop Image</label>
+                                    <label>Registraion Image</label>
                                     <input type="file" name="m_shop_image" id="m_shop_image" class="form-control">
                                     <input type="hidden" name="m_shop_image1" id="m_shop_image1" class="form-control" value="<?= $image; ?>">
                                 </div>
@@ -225,7 +225,7 @@
                         <?php } else { ?>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Shop Image</label>
+                                    <label>Registraion Image</label>
                                     <input type="file" name="m_shop_image" id="m_shop_image" class="form-control">
                                     <input type="hidden" name="m_shop_image1" id="m_shop_image1" class="form-control" value="">
                                 </div>
@@ -243,7 +243,7 @@
                         </div>
                          <div class="col-md-6">
                             <div class="form-group">
-                              <label>Shop Working Days</label><br>
+                              <label>Registraion Working Days</label><br>
                                 <fieldset data-role = "controlgroup" data-type = "horizontal">
                                     <input type ="checkbox" name="shop1[]" id ="shop1[]" value="1" />
                                     <label for = "checkbox ">Mon  &nbsp;</label>
@@ -379,7 +379,7 @@
                         <?php } else { ?>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Shop Image</label>
+                                    <label>Registraion Image</label>
                                     <input type="file" name="m_shop_adhar_b" id="m_shop_adhar_b" class="form-control">
                                     <input type="hidden" name="m_shop_adhar_b1" id="m_shop_adhar_b1" class="form-control" value="">
                                 </div>
@@ -387,35 +387,6 @@
                         <?php } ?>
 
                         <!-- //================Adhar IMAGE===============// -->
-
-                       <!--  <?php //if (!empty($id)) { ?>
-
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Cheque Image</label>
-                                    <input type="file" name="m_shop_cheque" id="m_shop_cheque" class="form-control">
-                                    <input type="hidden" name="m_shop_cheque1" id="m_shop_cheque1" class="form-control" value="<?= $shop_cheque_img; ?>">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                               
-                                    <?php //if (!empty($image)) {
-                                        $cheque_img = base_url('uploads/user/') . $image;
-                                    //} else {
-                                        $cheque_img = base_url('uploads/Category/defaultimg.jpg');
-                                    //} ?>
-                                    <img src="<?php echo $cheque_img; ?>" alt="Profile Photo" width="80">
-                                
-                            </div>
-                        <?php //} else { ?>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Cheque Image</label>
-                                    <input type="file" name="m_shop_cheque" id="m_shop_cheque" class="form-control">
-                                    <input type="hidden" name="m_shop_cheque1" id="m_shop_cheque1" class="form-control" value="<?= $shop_cheque_img; ?>">
-                                </div>
-                            </div>
-                        <?php //} ?>
 -->                         </div>
 
 <!------------------------adhar -------------------------------->
