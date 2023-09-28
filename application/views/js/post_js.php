@@ -196,6 +196,7 @@ $("#frm-update-data").submit(function(e) { e.preventDefault();
 
 
 
+
 }); </script>
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/alpine.min.js');?>">

@@ -77,11 +77,15 @@
             $visibility = $edit_value[0]->visibility;
             $right_column = $edit_value[0]->right_column;
             $addtoslider = $edit_value[0]->addtoslider;
-            $created_date = $edit_value[0]->created_date;
+            $created_date = date('m/d/Y',strtotime($edit_value[0]->created_date));
             $comments = $edit_value[0]->comments;
             $mainhead = $edit_value[0]->mainhead;
             $description = $edit_value[0]->description;
             $status = $edit_value[0]->m_post_status;
+            $created_time = date('H:i A',strtotime($edit_value[0]->created_time));
+            $location = $edit_value[0]->location;
+            $short_description = $edit_value[0]->short_description;
+
         } else {
             $id = '';
             $category = '';
@@ -95,6 +99,9 @@
             $comments = '';
             $mainhead = '';
             $description = '';
+            $short_description = '';
+            $created_time = '';
+            $location = '';
             $status = '';
         } ?>
 
@@ -136,13 +143,13 @@
                                         <div class="form-group">
                                             <label>Title</label>
                                             <input type="hidden" name="id" id="id" value="<?= $id; ?>">
-                                            <input type="text" name="title" id="title" class="form-control" placeholder="Name of title" required="" value="<?= $title; ?>">
+                                            <input type="text" name="title" id="title" class="form-control" placeholder="Name of title" value="<?= $title; ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Slug</label>
-                                            <input type="text" name="slug" id="slug" class="form-control" placeholder="Name of Slug" required="" value="<?= $slug; ?>">
+                                            <input type="text" name="slug" id="slug" class="form-control" placeholder="Name of Slug" value="<?= $slug; ?>">
                                         </div>
                                     </div>
 
@@ -209,22 +216,29 @@
 
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Date & Time</label>
-                                            <input type="date" name="created_date" id="created_date" class="form-control" placeholder="Name of Date & Time" required="" value="<?= $created_date; ?>">
+                                            <label>Date</label>
+                                            <input type="date" name="created_date" id="created_date" class="form-control cdate" placeholder="Name of Date & Time" value="<?= $created_date; ?>">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Time</label>
+                                            <input type="time" name="created_time" id="time" class="form-control" placeholder="Name of Time" value="<?= $created_time; ?>">
                                         </div>
                                     </div>
 
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Comments</label>
-                                            <input type="text" name="comments" id="comments" class="form-control" placeholder="Name of Comments" required="" value="<?= $comments; ?>">
+                                            <input type="text" name="comments" id="comments" class="form-control" placeholder="Name of Comments" value="<?= $comments; ?>">
                                         </div>
                                     </div>
 
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Main Heading</label>
-                                            <input type="text" name="mainhead" id="mainhead" class="form-control" placeholder="Name of Main Heading" required="" value="<?= $mainhead; ?>">
+                                            <input type="text" name="mainhead" id="mainhead" class="form-control" placeholder="Name of Main Heading" value="<?= $mainhead; ?>">
                                         </div>
                                     </div>
 
@@ -238,13 +252,26 @@
                                         </div>
                                     </div>
 
-                                    
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Location</label>
+                                            <input type="text" name="location" id="location" class="form-control" placeholder="Name of Location" value="<?= $location; ?>">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Summary & Description (Meta Tag)</label>
+                                            <textarea name="short_description" id="short_description" 
+                                             class="form-control" placeholder="Enter Your Summary & Description (Meta Tag)"><?php echo $short_description; ?></textarea>
+                                        </div>
+                                    </div>
 
                                   <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Description</label>
                                             <textarea name="description" id="description" 
-                                             class="form-control" placeholder="Enter Your Description"><?php echo $description; ?> </textarea>
+                                             class="form-control" placeholder="Enter Your Description"><?php echo $description;?></textarea>
                                         </div>
                                     </div>
 

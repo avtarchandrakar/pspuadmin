@@ -119,6 +119,7 @@
     <!-- <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script> -->
     <script src="<?php echo base_url('assets/plugins/ckeditor/ckeditor.js')?>"></script>
 
+
     
 
     <!-- Main JS-->
@@ -128,7 +129,8 @@
 </html>
 
 <?php $this->view('js/sidebar_js') ?>
-
+<!-- <script src="<?php echo base_url('assets/js/jquery-3.1.0.min.js') ?>"></script> -->
+<script src="<?php echo base_url('assets/js/jquery-ui.min.js')?>"></script>
 <script type="text/javascript">
 
     $('.btn').filter(':not([title])').attr('title','Click Here');
@@ -161,24 +163,6 @@
 
     });
 
-    /* <div class="form-group">
-
-        <label>Password</label>
-
-        <span class="icon_input">   
-
-          <input type="password" data-change="text" name="" id="" class="form-control icon-input"> 
-
-          <i class='fa fa-eye fa-2x input-icon' aria-hidden='true' data-change0='fa fa-eye' data-change='fa fa-eye-slash'></i>
-
-        </span> 
-
-      </div>  */
-
-    /* icon_input js End :  use Eg  Hide-Show Password  */
-
-
-
 
 
 function ImageAction(img_input){
@@ -204,6 +188,10 @@ function ImageAction(img_input){
   }
 
 };
+
+$(document).ready(function() {
+    // $(".cdate").datepicker();
+})
 
 
 

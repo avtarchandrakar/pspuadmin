@@ -102,6 +102,7 @@
                                         <th>Date & Time</th>
                                         <th>Comments</th>
                                         <th>Main Heading</th>
+                                        <th>Location</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -117,7 +118,7 @@
                                     if(!empty($mech_value)){
                                       foreach($mech_value as $value){
                                          $original_date =$value->m_post_added_on;
-                                          $new_date = date("d-m-Y", strtotime($value->created_date));
+                                          $new_date = date("d-m-Y", strtotime($value->created_date)).','.date("h:i A", strtotime($value->created_time));
                                       ?>
                                         <tr>
                                           <td><?php echo $i;?></td>
@@ -130,6 +131,8 @@
                                           <td><?php echo $new_date;?></td>
                                           <td><?php echo $value->comments;?></td>
                                           <td><?php echo $value->mainhead;?></td>
+                                          <td><?php echo $value->location;?></td>
+
                                           <td><?php if($value->m_post_status==1)echo "Active";
                                               else{echo "In-Active";} ?></td>
                                          

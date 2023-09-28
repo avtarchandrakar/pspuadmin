@@ -95,6 +95,8 @@
    echo  link_tag('assets/plugins/bootstrap-select/css/bootstrap-select.min.css');
 
    echo  link_tag('assets/plugins/summernote/css/summernote.css');
+   echo  link_tag('assets/css/jquery-ui.css');
+
 
 
 
