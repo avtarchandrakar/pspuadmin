@@ -105,7 +105,7 @@
                                         <div class="form-group">
                                             <label>User Name</label>
                                             <input type="hidden" name="m_user_id" id="m_user_id" value="<?= $id; ?>">
-                                            <input type="text" name="m_user_name" id="m_user_name" class="form-control" maxlength='50' placeholder="Name of user" onkeydown="return /[a-z]/i.test(event.key)"  required="" value="<?= $name; ?>">
+                                            <input type="text" name="m_user_name" id="m_user_name" class="form-control" maxlength='50' placeholder="Name of user"   required="" value="<?= $name; ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-4">

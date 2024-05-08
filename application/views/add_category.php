@@ -94,7 +94,7 @@
                                         <div class="form-group">
                                             <label>Category Title</label>
                                             <input type="hidden" name="m_category_id" id="m_category_id" value="<?= $id; ?>">
-                                            <input type="text" name="m_category_title" id="m_category_title" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="Title of Category" required="" value="<?= $title; ?>">
+                                            <input type="text" name="m_category_title" id="m_category_title" class="form-control"   - only  charecter placeholder="Title of Category" required="" value="<?= $title; ?>">
                                         </div>
                                     </div>
                                     <?php if (!empty($id)) { ?>

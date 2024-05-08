@@ -105,7 +105,7 @@
                                         <div class="form-group">
                                             <label>officer Name</label>
                                             <input type="hidden" name="m_officer_id" id="m_officer_id" value="<?= $id; ?>">
-                                            <input type="text" name="m_officer_name" id="m_officer_name" class="form-control" maxlength='50' placeholder="Name of officer" onkeydown="return /[a-z]/i.test(event.key)"  required="" value="<?= $name; ?>">
+                                            <input type="text" name="m_officer_name" id="m_officer_name" class="form-control" maxlength='50' placeholder="Name of officer"   required="" value="<?= $name; ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-4">

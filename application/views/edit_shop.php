@@ -137,7 +137,7 @@
                             <div class="form-group">
                                 <label>Shop Name</label>
                                 <input type="hidden" name="m_shop_id" id="m_shop_id" value="<?= $id; ?>">
-                                <input type="text" name="m_shop_name" id="m_shop_name" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="Name of Shop" required="" value="<?= $name; ?>">
+                                <input type="text" name="m_shop_name" id="m_shop_name" class="form-control"   - only  charecter placeholder="Name of Shop" required="" value="<?= $name; ?>">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -246,7 +246,7 @@
                             <div class="form-group">
                                 <label>Shop Opening Time</label>
                                
-                                <input type="time" name="m_shop_open_time" id="m_shop_open_time" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="Opening of Shop" required="" value="<?= $shop_open; ?>">
+                                <input type="time" name="m_shop_open_time" id="m_shop_open_time" class="form-control"   - only  charecter placeholder="Opening of Shop" required="" value="<?= $shop_open; ?>">
                             </div>
                         </div>
 
@@ -254,7 +254,7 @@
                             <div class="form-group">
                                 <label>Shop closing Time</label>
                                 
-                                <input type="time" name="m_shop_close_time" id="m_shop_close_time" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="closing of Shop" required="" value="<?= $shop_close; ?>">
+                                <input type="time" name="m_shop_close_time" id="m_shop_close_time" class="form-control"   - only  charecter placeholder="closing of Shop" required="" value="<?= $shop_close; ?>">
                             </div>
                         </div>
             <?php if (!empty($id)) { ?>

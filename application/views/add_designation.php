@@ -92,7 +92,7 @@
                                         <div class="form-group">
                                             <label>Designation Title</label>
                                             <input type="hidden" name="m_designation_id" id="m_designation_id" value="<?= $id; ?>">
-                                            <input type="text" name="m_designation_title" id="m_designation_title" class="form-control" onkeydown="return /[a-z]/i.test(event.key)"  - only  charecter placeholder="Title of designation" required="" value="<?= $title; ?>">
+                                            <input type="text" name="m_designation_title" id="m_designation_title" class="form-control"   - only  charecter placeholder="Title of designation" required="" value="<?= $title; ?>">
                                         </div>
                                     </div>
                                     
